@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>--payment form--<</title>
+    <style>
+        form{
+            background-color: #f2f2f2;
+            border: 5px solid lightgray;
+            padding: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            margin: 10px 15px;
+           border-radius: 10px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="emanil"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 100%;
+            margin: 5px;
+            
+
+    
+
+
+        }
+        fieldset{
+            background-color: white;
+            border-radius: 5px;
+        }
+        .pay{
+            text-align: center;
+        
+
+        }
+        button{
+            background-color: #1f1db0;
+            padding: 10px;
+            cursor:pointer;
+            border-radius: 5px;
+            width: 100%;
+            
+        
+        }
+        button:hover{
+            color:#4caf84;
+        }
+    </style>
+</head>
+<body>
+   <form action="">
+    <h1 class="pay">payment form</h1>
+    <hr>
+    <h2>>--Contact Information--<</h2>
+    <div>
+        <p>Name- <input type="text" name="name" placeholder="enter your name"></p>
+        
+        <p>Your dob- <input type="date" placeholder="your date of birth"></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>
+        <input type="radio" id="male" name="male" >male
+        <input type="radio" name="male" id="female">female
+    </p>
+</fieldset> 
+    <p>Address- <textarea name="area" id="tarea" cols="30" rows="10" placeholder="enter your address"></textarea> </p>
+<p>E.mail-<input type="email" placeholder="enter your email"></p>
+<p>pincode-<input type="number"></p>
+    </div>    
+
+    <h2>>--Payment Information--<</h2>
+    <fieldset>
+        <legend>Card type</legend>
+    <select name="Card type" id="ctype"> 
+        <option value="">----your card type----</option>
+        <option value="debit card" class="">debit card</option>
+        <option value="credit card">credit card</option>
+        <option value="visa">visa</option>
+
+    </select>
+</fieldset>
+<p>Card Number- <input type="number" name="card type" id="c_tyoe"> </p>
+<p>CVV-<input type="number"></p>
+<button>Pay Now</button>
+   </form>
+   
+</body>
+</html>
